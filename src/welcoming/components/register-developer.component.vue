@@ -17,7 +17,23 @@ export default {
 </script>
 
 <template>
-
+  <div>
+    <h2> New Developer </h2>
+    <div>
+      <form @submit.prevent="onSubmit"> //
+        <div>
+          <label for="first-name">First Name</label>  <!-- etiqueta para el campo de texto -->
+          <input type="text" id = "first-name" v-model="firstName" required> <!-- campo de texto para el nombre -->
+        </div>
+        <div>
+          <input type="text" id="last-name" v-model="lastName" required> <!-- campo de texto para el apellido -->
+        </div>
+        <div>
+          <button type="submit">Register</button> <!-- boton para enviar el formulario -->
+        </div>
+      </form>
+    </div>
+  </div>
 </template>
 
 <style scoped>
