@@ -15,7 +15,6 @@ export default {
     <p> Developers registered: {{ developerCount }} </p>
     <p> Note: Unknown developers are not considered </p>
   </div>
-
 </template>
 
 <style scoped>

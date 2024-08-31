@@ -20,14 +20,16 @@ export default {
   <div>
     <h2> New Developer </h2>
     <div>
-      <form @submit.prevent="onSubmit"> //
+      <form @submit.prevent="onSubmit">
         <div>
-          <label for="first-name">First Name</label>  <!-- etiqueta para el campo de texto -->
+          <label for="first-name">First Name </label>  <!-- etiqueta para el campo de texto -->
           <input type="text" id = "first-name" v-model="firstName" required> <!-- campo de texto para el nombre -->
         </div>
         <div>
+          <label for="last-name">Last Name </label>
           <input type="text" id="last-name" v-model="lastName" required> <!-- campo de texto para el apellido -->
         </div>
+        <br>
         <div>
           <button type="submit">Register</button> <!-- boton para enviar el formulario -->
         </div>

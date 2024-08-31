@@ -7,7 +7,7 @@ export default {
   },
   methods: {
     developerName() {
-      let developer = new developer(this.firstName, this.lastName);
+      let developer = new Developer(this.firstName, this.lastName);
       return developer.fullName;
     }
   }
